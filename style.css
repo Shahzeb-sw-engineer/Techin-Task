@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-color:white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.firstpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(/Assets/background\ image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--font-color);
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.navbar .logo{
+    font-size: 26px;
+}
+.tabs ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.tabs ul li{
+    padding: 6px;
+    font-size: 18px;
+}
+.tabs li a{
+    text-decoration: none;
+    color: var(--font-color);
+    
+}
+.right .search{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+.right input{
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-align: center;
+
+ 
+}
+.right img{
+    width: 20px;
+    margin-right: 25px;
+   
+   
+}
+.hero .description{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+.hero .description .heading{
+    font-size: 2.5rem;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .icons {
+    display: flex;
+    gap: 5px;
+}
+.footer .icons img{
+    width: 20px;
+} 
+.footer .rightcorner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+}
+.footer .rightcorner .desc h4{
+    font-size: 18px;
+    
+}
+.footer  .rightcorner .images{
+    display: flex;
+    gap: 2px;
+}
+.footer  .rightcorner .images img{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 768px) {
+ 
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-color: rgb(41, 40, 40);
+        color: white;
+       
+    }
+    
+    .tabs ul {
+        flex-direction: column;
+        gap: 0.1px;
+        text-align: center;
+        width: 100vw;
+      
+      
+    }
+    .tabs ul li a{
+        color: white;
+    }
+
+
+    .hero .description {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .hero .description .heading {
+        font-size: 2rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .rightcorner {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .rightcorner .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .rightcorner .images img {
+        width: 30px; /* Adjusted size for smaller screens */
+    }
+    .top p{
+        font-size: 1rem;
+    }
+    .pictures{
+        flex-direction: column;
+        gap: 2px;
+        align-items: center;
+    }
+    .pictures .img {
+        width: 90vw;
+        height: 40vh;
+    }
+    .map p{
+        font-size: 13px;
+    }
+    .flowimage{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .map p{
+        font-size: 13px;
+    }
+    .pictures .img{
+        width: 100%;
+        height: 30vw;
+    }
+    .pictures{
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+    .top p{
+        font-size: 10px;
+    }
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .tabs ul li {
+        font-size: 16px;
+    }
+
+    .hero .description .heading {
+        font-size: 1.5rem;
+    }
+
+    .footer .rightcorner .desc h4 {
+        font-size: 16px;
+    }
+    .flowimage{
+        flex-direction: column;
+    }
+}
+ .top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.top p:nth-child(2) {
+    max-width: 300px; 
+    overflow-wrap: break-word; 
+}
+ .pictures {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    
+}
+.pictures img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+ .pictures .img {
+    width: 40%;
+    height: 68vh;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+ .map{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+ .buttons{
+    display: flex;
+    gap: 4px;
+}
+ .buttons button{
+  padding: 4px 8px;
+  border-radius: 15px;
+  text-align: center;
+}
+ .map img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vw;
+    height: 30vw;
+}
+ .houses .description{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around; 
+  
+}
+ .houses .description p{
+    width: 30vw;
+    overflow-wrap: break-word;
+    font-size: 1.5rem;
+}
+ .houses .description .buttons{
+    margin-top: auto;
+}
+ .flowimage {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+ .flowimage .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+ .flowimage .card img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 68vh;
+  }
+   .flowimage .card .desc{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ .flowimage .card .desc p{
+    width: 50%;
+    overflow-wrap: break-word;
+}
+
+.footer {
+    display: flex;
+    width: 100%;;
+    gap: 10px;
+}
+ .footer .description{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+ .footer .description h2{
+ 
+   
+    width: 60%;
+    overflow-wrap: break-word;
+}
+ .footer .testimonial {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+ .footer .testimonial .flow{
+    display: flex;
+    justify-content: space-between;
+}
+ .footer .testimonial .flow .profile{
+    display: flex;
+    gap: 10px;
+}
+ .footer .testimonial .flow .profile img{
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+}
+ .footer .testimonial .flow .buttons {
+    margin-top: auto;
+}
+.footer .testimonial .comment{
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+}
